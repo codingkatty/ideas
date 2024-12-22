@@ -18,7 +18,9 @@ const ideas = {
         "calendar",
         "coding pets",
         "AI clone",
-        "password generator (but password game)"
+        "password generator (but password game)",
+        "meme generator",
+        "note share"
     ],
     software: [
         "watch app",
@@ -27,10 +29,13 @@ const ideas = {
         "VSCode theme extension",
         "game engine",
         "programming language",
-        "CLI",
+        "chaoes CLI",
         "cool nice IDE",
         "excel plugin",
-        "desktop pet"
+        "desktop pet",
+        "browser extension that breaks css",
+        "browser",
+        "pdf editor"
     ],
     game: [
         "banana gun",
@@ -45,9 +50,10 @@ const ideas = {
         "roguelike",
         "platformer",
         "rhythm game",
-        "Beijing(corn) farmer",
+        "Beijing(corn) farming",
         "pay to win",
-        "geoguesser"
+        "geoguesser",
+        "scp themed"
     ],
     hardware: [
         "smart mirror",
@@ -60,7 +66,9 @@ const ideas = {
         "smart Glasses",
         "electric generating shoes",
         "cap for the blind",
-        "3D printer"
+        "3D printer",
+        "sticker cutter",
+        "keyboard"
     ],
     backend: [
         "Telegram bot",
@@ -69,7 +77,9 @@ const ideas = {
         "Minecraft server with mod",
         "API about donuts",
         "Minecraft server on RaspPi 5",
-        "login form"
+        "login form",
+        "database about cats",
+        "scraper thing"
     ],
 };
 
@@ -93,7 +103,21 @@ const additionals = [
     "has a hidden game",
     "has a secret message",
     "is Gen Z themed",
-    "is all italics"
+    "is all italics",
+    "impresses your bestie",
+    "is useful to cats",
+    "is hard af to use",
+    "makes your arch nemesis go lol",
+    "is a meme",
+    "goes viral in your school",
+    "works according to random",
+    "is very, very loud",
+    "is the most quiet in the world",
+    "is very satisfying to use",
+    "is written in secret code",
+    "is very, very slow",
+    "has a random fire effect",
+    "is fire"
 ];
 
 function randomPrompt() {
@@ -116,6 +140,7 @@ const output = document.getElementById("output");
 document.getElementById("generate").addEventListener("click", () => {
     let isThink = true;
     output.innerHTML = "";
+
     const intervalId = setInterval(() => {
         buttonImg.src = isThink
             ? "think1.png"
